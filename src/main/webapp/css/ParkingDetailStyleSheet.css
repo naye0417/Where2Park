@@ -1,0 +1,342 @@
+/*calendar 디자인*/
+#ui-datepicker-div{
+      background-color: #fff;
+    text-align: center;
+    width: 200px;
+    padding: 5px;
+    box-shadow: 1px 1px 3px #bbb;
+    display: none;
+}
+.ui-datepicker-calendar{
+    background-color: #fff;
+   text-align: center;
+    width: 200px;
+}
+.ui-datepicker-unselectable{
+    background-color: #eee;
+    color: #aaa;
+}
+
+.ui-datepicker-today{
+    background-color:#f2f7ff;
+}
+.ui-datepicker-current-day{
+    border: solid 1px  #b1ceff ;
+}
+a.ui-state-default{
+    color: #367FFF ;
+}
+.ui-datepicker-calendar td.undefined{
+    border-radius: 20%;
+}
+.ui-datepicker-calendar td:not(.ui-datepicker-unselectable):hover{
+background-color: #367FFF;
+}
+.ui-datepicker-calendar td:not(.ui-datepicker-unselectable):hover a{
+  color: #fff;
+    }
+span.ui-state-default{
+    color: #aaa;
+}
+.ui-icon-circle-triangle-w{
+    padding-top: 5px;
+    padding-left: 5px;
+    float: left;
+    cursor: pointer;
+    font-size: smaller;
+    color: #367FFF ;
+}
+.ui-icon-circle-triangle-e{
+    padding-top:5px;
+    padding-right: 5px;
+    float: right;
+    cursor: pointer;
+    font-size: smaller;
+    color: #367FFF ;
+}
+.ui-datepicker-title span{
+    font-weight: 500;
+}
+.hasDatepicker{
+    width: 100px;
+    height: 30px;
+}
+/*여기는 selectParking */
+.pk-pickday{
+    display: inline;
+}
+.segment{
+   width: 90%;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+.pk-content{
+       height: 500px;
+    margin-top: 25px;
+}
+
+.pk-info{
+	width: 60%;
+    height: auto;
+    /* border: solid 1px #ccc; */
+    float: left;
+    padding-top: 30px;
+}
+.pk-condition{
+width: auto;
+    border: solid 1px #ccc;
+    float: right;
+    padding: 15px;
+    text-align: right;
+    box-shadow: 1px 1px 2px #ccc;
+    margin-top: 60px;
+    overflow: hidden;
+    min-height: 320px;
+    min-width: 270px;
+}
+
+.pk-condition div{
+margin: 20px 20px;
+
+}
+
+#pk-book-btn{
+width: 210px;
+height: 70px;
+background-color: #367FFF;
+color: #fff;
+font-size: large;
+padding: 20px;
+border: none;
+border-radius: 10px ;
+cursor: pointer;
+}
+#pk-book-btn:hover{
+    background-color: #5e99ff;
+}
+
+.pk-pic{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+/* 
+#pk-pic-upload{
+    width: 100%;
+} */
+.pk-info p{
+    margin: 30px 20px;
+    font-size: 13pt;
+    font-weight: 300;
+    line-height: 21pt;
+}
+.pk-info h1{
+    margin: 20px;
+    
+    font-size: 22pt;
+    font-weight: 500;
+}
+.pk-location{
+ /* padding: 20px; */
+}
+.search-map{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 150px;
+}
+.pk-price{
+	font-size:1.5em;
+	font-weight: 400;
+}
+.pk-subject{
+    font-size: 18pt; 
+    font-weight: 400; 
+    margin:60px 20px 10px 20px;
+}
+.rv-table{
+    border-collapse: collapse;
+}
+.rv-indiv{
+    border:#ccc solid 1px ;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 200px;
+    padding: 20px;
+}
+.rv-pic{
+    width: 80px;
+    height:80px;
+    text-align: center;
+}
+.rv-pic img{
+width: 60px;
+    height: 60px;
+    border-radius: 70%;
+    object-fit: cover;
+}
+#cntnr .rtng{
+    display:none;
+}
+.pagination-item{
+    display: inline;
+    margin: 10px;
+    cursor: pointer;
+}
+.pagination-item :hover{
+color: #367FFF;
+}
+nav .paging{
+    text-align: center;
+    margin: 20px;
+}
+
+  #noRsv{
+    background-image: url(/Where2Park/images/error-bg.png);
+    margin: 0 10%;
+    width: 80%;
+    height: 200px;
+    background-size: 80%;
+    background-position: center center;
+   }
+#noRsv_text{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    font-color: #4c4c4c;
+    opacity: 0.7;
+    padding-top: 140px;
+   }
+#won{
+font-size: x-large;
+    font-weight: 500;
+    color: #367FFF;
+    
+}
+/*추천주차장 css*/
+.parking-lot{
+	width: 250px;
+	height : 400px;
+	border-collapse: collapse:
+	
+}
+
+.hasTimepicker{
+	width: 100px;
+    height: 35px;
+    margin: 3px;
+    color: #367fff;
+    border: 1px solid #b1ceff;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 1px 1px 3px #ddd;
+    cursor: pointer;
+}
+
+.description {
+   width: 90%;
+   margin: 0 auto;
+}
+ /*추천 알고리즘*/
+ 
+ .pk-recommendation{
+   height:500px;
+   
+ }
+   #cntnr #recommendation {
+      width: 100%;
+      /* height: 350px; */
+      max-height: 350px;
+      /*border: 1px solid #ccc;*/
+      box-sizing: border-box;
+      margin: 0 0 20px 0;
+      position: relative;
+      z-index: 997;
+   }
+
+   
+   .recommendation-box {
+width: 29%;
+    min-height: 240px;
+    height: 350px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px rgb(0 0 0 / 10%);
+    margin: 0 20px;
+    float: left;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+   
+   .reco-img{
+      /* background-color:blue; */
+      width: 100%;   
+      height: 200px;
+      border-radius: 3px;
+   }
+
+
+   .reco-type{
+font-size: 13px;
+    font-weight: bold;
+    padding: 0px 5px;
+   }
+   .reco-title{
+      font-weight: bold;
+      font-size: 15px;
+      border-bottom: 1px solid #ccc;
+      padding: 5px;
+   }
+
+   }
+   #reco-in{
+      font-size: 12px;
+      font-weight: 400;
+      padding: 0 5px;
+      color:  #367fff;
+   }
+      #reco-out{
+      font-size: 12px;
+      font-weight: 400;
+      padding: 0 5px;
+      color: #ff5353;
+   }
+   .reco-intime{
+font-size: 12px;
+    padding: 0px 5px;
+   }
+  .title{
+  margin:30px 30px 50px 0;
+  }
+  #cartype{
+  display: inline;
+  width: 80px;
+  height: 50px;
+  background-color: #367FFF;
+  border: none;
+  border-radius:7px;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-size:1.5em;
+  float:left;
+  margin: 15px;
+  }
+   #type{
+display: inline;
+    width: 45px;
+    height: 27px;
+    background-color: #fff4f4;
+    border: 1px solid wheat;
+    border-radius: 4px;
+    color: #ff2c2c;
+    padding: 2px;
+    text-align: center;
+    font-size: 11pt;
+    /* float: left; */
+    margin: 3px;
+  }
+  #inOut{
+  font-color:#367FFF;
+  }
